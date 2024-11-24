@@ -7,7 +7,7 @@ def insertion_sort(arr):
         j = i - 1
 
         while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]  # Сдвиг элемента вправо
+            arr[j + 1] = arr[j]  
             j -= 1
 
         arr[j + 1] = key
@@ -16,8 +16,8 @@ def insertion_sort(arr):
 
 print("Создаем случайный список чисел.")
 
-length = random.randint(1, 100)
-sample_list = [random.randint(-100, 100) for _ in range(length)]
+length = random.randint(1, 10)
+sample_list = [random.randint(-10, 10) for _ in range(length)]
 
 print("Исходный список:", sample_list)
 print("Начинаем сортировку.")
